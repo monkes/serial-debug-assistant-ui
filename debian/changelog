@@ -1,0 +1,8 @@
+debug-assistant (1.0.0-0) unstable; urgency=medium
+
+  * Initial release
+  * Support for dynamic plugin loading
+  * Plugin management interface
+  * Log and debug output windows
+
+ -- Debug Assistant Team <support@debugassistant.com>  Sun, 10 Mar 2024 00:00:00 +0800

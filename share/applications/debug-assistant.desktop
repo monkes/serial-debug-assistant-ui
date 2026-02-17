@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Debug Assistant
+Name[zh_CN]=调试助手
+Comment=A debug tool with plugin support
+Comment[zh_CN]=支持插件扩展的调试工具
+Exec=debug-assistant
+Icon=debug-assistant
+Terminal=false
+Type=Application
+Categories=Development;Debugger;
+StartupNotify=true

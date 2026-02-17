@@ -1,0 +1,35 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	# 不需要构建步骤
+
+override_dh_auto_configure:
+	# 不需要配置步骤
+
+override_dh_auto_install:
+	# 安装桌面文件
+	install -D -m 644 share/applications/debug-assistant.desktop debian/debug-assistant/usr/share/applications/debug-assistant.desktop
+	# 安装图标文件
+	install -D -m 644 debug_assistant/resources/icon256x256.png debian/debug-assistant/usr/share/icons/hicolor/256x256/apps/debug-assistant.png
+	install -D -m 644 debug_assistant/resources/icon128x128.png debian/debug-assistant/usr/share/icons/hicolor/128x128/apps/debug-assistant.png
+	install -D -m 644 debug_assistant/resources/icon64x64.png debian/debug-assistant/usr/share/icons/hicolor/64x64/apps/debug-assistant.png
+	install -D -m 644 debug_assistant/resources/icon48x48.png debian/debug-assistant/usr/share/icons/hicolor/48x48/apps/debug-assistant.png
+	# 安装Python代码
+	dh_install
+	# 创建启动脚本
+	install -D -m 755 debian/debug-assistant.sh debian/debug-assistant/usr/bin/debug-assistant
+
+override_dh_auto_clean:
+	dh_clean
+	# 清理构建目录
+	rm -rf debian/debug-assistant/
+	# 清理其他临时文件
+	rm -f debian/*.debhelper.log
+	rm -f debian/*.substvars
+	rm -f debian/files
+
+override_dh_auto_test:
+	# 不需要测试步骤

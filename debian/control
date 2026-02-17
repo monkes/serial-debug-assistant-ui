@@ -1,0 +1,21 @@
+Source: debug-assistant
+Section: python
+Priority: optional
+Maintainer: Debug Assistant Team <support@debugassistant.com>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.5.1
+Homepage: https://github.com/debugassistant/debug-assistant
+
+Package: debug-assistant
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}, python3-pyqt5, python3-serial, python3-pyqt5.sip, python3-pyqt5.qtserialport
+Description: A debug tool with plugin support
+ Debug Assistant is a powerful debugging tool that supports dynamic
+ loading of Python plugins. It provides an intuitive interface for managing
+ plugins and viewing debug output and logs.
+ .
+ Main features:
+  - Dynamic plugin loading system
+  - Plugin management interface
+  - Log and debug output windows
+  - Extensible plugin architecture

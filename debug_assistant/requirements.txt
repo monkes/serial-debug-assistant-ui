@@ -1,0 +1,6 @@
+PyQt5>=5.15.0
+PyQt5-Qt5>=5.15.0
+PyQt5-sip>=12.8.0
+pyqt5-tools>=5.15.0
+PySerial>=3.5
+pyqt5-qt5serialport>=5.15.0

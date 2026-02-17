@@ -1,0 +1,5 @@
+include README.md
+include LICENSE
+include requirements.txt
+recursive-include debug_assistant/resources *
+recursive-include debug_assistant/plugins *.py
