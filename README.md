@@ -193,5 +193,5 @@ Zhang yang
 
 ## 项目地址
 
-- 主项目：https://github.com/monkes/serial-debug-assistant-ui.git
-- 插件仓库：https://github.com/monkes/serial-debug-assistant-plugins.git
+- 主项目：https://github.com/monkes/serial-debug-assistant-ui
+- 插件仓库：https://github.com/monkes/serial-debug-assistant-ui_plugins
