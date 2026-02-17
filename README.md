@@ -3,8 +3,8 @@
 ## 项目概述
 
 调试助手是一个基于 Python 3 和 PyQt5 开发的通用调试工具，采用插件化架构设计，支持动态加载插件来扩展功能。项目旨在为开发者提供一个灵活、可扩展的调试平台，通过插件机制实现功能的模块化和可定制化。
-- 主项目：https://github.com/monkes/serial-debug-assistant-ui.git
-- 插件仓库：https://github.com/monkes/serial-debug-assistant-plugins.git
+- 主项目：https://github.com/monkes/serial-debug-assistant-ui
+- 插件仓库：https://github.com/monkes/serial-debug-assistant-ui_plugins
 
 ## 核心特性
 
